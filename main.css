@@ -1,0 +1,436 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #121212;
+  color: white;
+  line-height: 1.6;
+  
+}
+
+/* Navbar */
+nav {
+  background: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav h1 {
+  color: #f64c08;
+  margin-left: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 40px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #f64c08;
+}
+
+
+/* Default Navigation for Large Screens */
+#nav-links {
+  display: flex; /* Always visible on large screens */
+  flex-direction: row;
+  position: static;
+  background: none;
+  width: auto;
+  padding: 15px 20px;
+  gap: 30px;
+}
+
+#nav-links li {
+  margin: 0 20px;
+}
+
+
+/* Show menu button only on small screens */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Show menu button only on small screens */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* Hero Section */
+#my_image{
+  width: 200px;
+  height: 400px;
+  border-radius: 10%;
+}
+#hero {
+  background-image: url(./image/computer3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  /* box-shadow: inset 0 100px 200px 300px rgba(0,0,0, 0.7); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 4rem;
+}
+#hero div p {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#hero span {
+  color: #f64c08;
+}
+
+/* aboutme */
+#about{
+  background-color:#f64c08 ;
+  margin: 20px 70px;
+  max-width:  2000px;
+  border-radius: 5px;
+  padding: 100px 20px;
+}
+
+/* Sections */
+section {
+  margin: 20px 50px ;
+  padding: 100px 20px;
+  text-align: center;
+  /* scroll-behavior: smooth; */
+}
+
+/* Skills */
+#total_skill{
+  background-color:white;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 10px;
+  width: auto;
+  border-radius: 5px;
+}
+
+ #about_skill{
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+ }
+
+
+#skillset_left>img{
+  width: 500px;
+  max-height: 300px;
+
+}
+#skillset_right{
+  line-height: 40px;
+}
+#skillset_right>h2{
+  font-size: 30px;
+  color: black;
+}
+
+#skillset_right>h2>span{
+  color: #f64c08;
+}
+
+.skill_about{
+  border: 2px solid black;
+  width: 250px ;
+  height: 80px;
+  z-index: -5;
+  color: black;
+  padding: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skill_about>img{
+  padding-top: 10px;
+  width:60px;
+  max-height: 60px;
+}
+
+
+/* Projects */
+.project {
+  background: #222;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#summary{
+  border-bottom: 3px solid #f64c08 ;
+}
+
+.project_img{
+  max-width: 200px;
+  height: 200px;
+}
+
+.about_project{
+  padding-top: 50px;
+}
+
+.about_project>a{
+  border: 3px solid #f64c08;
+  border-radius: 5px;
+  text-decoration: none;
+  color:white;
+  background-color: #f64c08;
+  padding: 10px;
+}
+
+.about_project>a:hover{
+  text-decoration: none;
+  color:black;
+}
+
+/* Education */
+#totla_education{
+  background-color: #f64c08;
+  padding: 50px;
+  border-radius: 5px;
+}
+#education_content h1{
+   /* font-family: "Crimson Pro", serif; */
+   font-size: 40px;
+   color: black;
+}
+ #education_content{
+    background-color: #f64c08;
+    color: white;
+    max-height: 100px;
+    margin-left: 100px;
+ }
+ #about_education{
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+/* Contact */
+#contact{
+  margin: 20px 70px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#contact_img{
+  height: 300px;
+  width: 400px;
+}
+
+#contact_me{
+  color: black;
+}
+
+#contact_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+  width: 400px;
+}
+#contact_container>p{
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 20px;
+  color: black;
+}
+#contact_container>p>span{
+  color: #f64c08;
+}
+
+@media (max-width: 616px) {
+  #nav-links {
+    display: none; /* Hide by default on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #1a1a1a;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  nav h1 {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  
+  #nav-links.show {
+    display: flex; /* Show when toggled */
+  }
+
+  .menu-btn {
+    display: block; /* Show the button on small screens */
+  }
+  /* Hero Section */
+  #hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  #hero h2 {
+    font-size: 2.5rem;
+  }
+
+  #hero div p {
+    font-size: 1.5rem;
+  }
+
+  #my_image {
+    width: 150px;
+    height: 300px;
+  }
+
+  /* Sections */
+  section {
+    margin: 10px 20px;
+    padding: 80px 10px;
+  }
+
+  /* About Me */
+  #about {
+    margin: 10px 20px;
+    padding: 80px 10px;
+  }
+
+  /* Skills */
+  
+  #total_skill {
+    background-color:white;
+    padding: 10px;
+    display: flex;
+    width: auto;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about_skill {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skillset_left img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+  /* Projects */
+  .project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Education */
+  #totla_education {
+    padding: 20px;
+  }
+
+  #about_education {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #education_content {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Contact */
+  #contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: auto;
+    margin: 30px;
+  }
+
+  #contact_container>p{
+    font-size: 14px;
+    text-align: left;
+    padding-bottom: 20px;
+    color: black;
+  }
+  #contact_container {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #contact_img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
